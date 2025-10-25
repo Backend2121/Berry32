@@ -4,7 +4,8 @@ from utils import centerString
 from utils import settime
 from utils import ActiveWidget
 
-VERSION = 100
+VERSION = 101
+# Hello updater!
 
 widget_number = 0
 
@@ -22,4 +23,5 @@ def run(id, active_widget):
             oled.text("Data e ora", centerString("Data e ora"), 0)
             oled.text(dateString, centerString(dateString), 16)
             oled.text(timeString, centerString(timeString), 32)
+
             oled.show()
